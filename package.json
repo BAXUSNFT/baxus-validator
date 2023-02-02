@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "amman:start": "solana --version && DEBUG='amman:(info|error|debug)' CI=1 amman start",
+    "amman:start": "DEBUG='amman:(info|error|debug)' amman start",
     "amman:stop": "amman stop",
     "packages:new": "node infra/generate-new-package.mjs",
     "packages:change": "changeset",
