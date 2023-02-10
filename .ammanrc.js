@@ -35,8 +35,8 @@ module.exports = {
   validator: {
     killRunningValidators: true,
     programs,
-    jsonRpcUrl: LOCALHOST,
-    websocketUrl: '127.0.0.1:8900',
+    jsonRpcUrl: 'http://0.0.0.0:8899',
+    websocketUrl: '0.0.0.0:8900',
     commitment: 'confirmed',
     ledgerDir: tmpLedgerDir(),
     resetLedger: true,
