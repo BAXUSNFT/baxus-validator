@@ -63,8 +63,8 @@ module.exports = {
     jsonRpcUrl: "http://0.0.0.0:8899",
     websocketUrl: "0.0.0.0:8900",
     commitment: "confirmed",
-    ledgerDir: tmpLedgerDir(),
-    resetLedger: true,
+    ledgerDir: "/tmp/validator/ledger",
+    resetLedger: false,
     verifyFees: false,
   },
   relay: {
@@ -74,9 +74,9 @@ module.exports = {
   },
   storage: {
     storageId: MOCK_STORAGE_ID,
-    clearOnStart: true,
+    clearOnStart: false,
   },
   snapshot: {
-    snapshotFolder: path.join(__dirname, "snapshots"),
+    snapshotFolder: "/tmp/validator/snapshots",
   },
 };
